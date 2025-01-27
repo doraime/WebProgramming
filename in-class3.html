@@ -2,23 +2,49 @@
 <html>
     <head>
         <title>In Class - Lesson 3</title>
+        <style>
+            a{color:green}
+            td,th {border:1px solid black;}
+        </style>
     </head>
     <body>
         <a href="test.html">Test</a>
         <a href="/">Root></a>
         <table>
-            <tr>
-                <th>Language</th>
-                <th>Use</th>
-            </tr>
+            <thead>
+                <tr>
+                    <th colspan="2">Table of Language and Uses</th>
+                </tr>
+                <tr>
+                    <th>Language</th>
+                    <th>Use</th>
+                </tr>
+            </thead>
             <tr>
                 <td>HTML</td>
-                <td>Webpage layout</td>
+                <td rowspan="2">Webpage layout & Design</td>
             </tr>
             <tr>
                 <td>CSS</td>
-                <td>Webpage design</td>
+                <!--<td>Webpage design</td>-->
             </tr>
+            <tbody>
+
+            </tbody>
+
         </table>
+        <br><br>
+
+        <form action="https://www.w3schools.com/action_page.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="firstname">
+
+            <br><br>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="myemail">
+            <br><br>
+            <input type="submit" value="Send Message">
+
+        </form>
     </body>
 </html>
