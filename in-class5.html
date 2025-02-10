@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
+        <style>
+            @font-face{
+                font-family:'Roboto Mono';
+                src: url('RobotoMono-Regular.ttf') format('truetype');
+                font-weight:normal;
+                font-style:normal;
+            }
+            /*Global Selector*/
+            *{ color: purple; font-family: 'Ballet',Arial;}
+            /*You can add fonts divided by commas and it will apply fonts if applicable in that order.*/
+            /*serif(fancy), sans-serif(not fancy), and monospace(same width) fonts*/
+            .serif{font-family:'Times New Roman';}/*Add quotes around the spaced font style*/
+            .sans-serif{font-family:Verdana;}
+            .receipt{font-family:'Courier New';}/*monospace*/
+            h1{text-transform:uppercase;text-shadow:1px 1px 1px gray;}
+            .character{font-family:'Times New Roman';font-weight:bold;color:black;}
+            p{text-align:justify;/*Makes the text spread out, varying the gaps in between the words so that all lines of text are the same width*/color:black;}
+            /*disc, circle, square, none*/
+            ul{list-style-type:square;}
+            .ol{list-style-type:lower-roman;list-style-position:inside;}
+        </style>
+    </head>
+    <body>
+        <h1>Tommy the cat</h1>
+
+        <p>Well I remember it as though it were a meal ago...</p>
+
+        <p class="serif">
+            Said <span class="character">Tommy the Cat</span> as he reeled back to clear whatever foreign matter may have nestled its way into his mighty throat. Many a fat alley rat had met its demise while staring point blank down the cavernous barrel of this awesome prowling machine. Truly a wonder of nature this urban predator - Tommy the cat had many a story to tell. But it was a rare occasion such as this that he did.
+        </p>
+
+        <p class="sans-serif">
+            Said Tommy the Cat as he reeled back to clear whatever foreign matter may have nestled its way into his mighty throat. Many a fat alley rat had met its demise while staring point blank down the cavernous barrel of this awesome prowling machine. Truly a wonder of nature this urban predator - Tommy the cat had many a story to tell. But it was a rare occasion such as this that he did.
+        </p>
+        <p class="receipt">
+            Receipt<br>
+            -----------------<br>
+            Milk&nbsp;&nbsp;&nbsp;$ 2.00 <br>
+            TV&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ 150.25 <br>
+            Total&nbsp;&nbsp;$ 152.25
+        </p>
+        <p><!--default font-->
+            Receipt<br>
+            -----------------<br>
+            Milk&nbsp;&nbsp;&nbsp;$ 2.00 <br>
+            TV&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$ 150.25 <br>
+            Total&nbsp;&nbsp;$ 152.25
+        </p>
+        <pre class="receipt"><!--pre-formatted text which displays the text as is displayed in code, whereas in monospace you have to calculate the spaces and line breaks-->
+Receipt
+-----------------
+Milk   $ 2.00 
+TV     $ 150.25 
+Total  $ 152.25
+        </pre>
+        <br>
+        <p style="font-size:10px;">My font size is 10px</p>
+        <p style="font-style:italic;">My font style is italic</p>
+        <p style="font-weight:bolder;">My font weight is bolder</p>
+        <p style="text-transform:uppercase;">My text transform is uppercase</p>
+        <p style="text-decoration:line-through">My text decoration is line through</p>
+        <br>
+
+        <p>Unordered list</p>
+        <ul>
+            <li>Hummus Garden Tabouli Roll</li>
+            <li>Bibimbap</li>
+            <li>Street Tacos</li>
+            <li>Salmon Salad</li>
+        </ul>
+        <p>Ordered list</p>
+        <!--1, A, a, I, i-->
+        <ol class="ol" type="1"; start="14"><!--no semicolons-->
+            <li><span style="font-family:'Roboto Mono';">C++</span></li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>Ruby</li>
+        </ol>
+    </body>
+</html>
