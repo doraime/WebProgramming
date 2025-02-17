@@ -1,0 +1,56 @@
+<!--personal note:
+                    git add .
+                    git commit
+                    git push
+                                            -->
+<!doctype html>
+<html>
+    <head>
+        <title>In Class 6</title>
+        <style>
+            div{
+                /***---content padding border margin---***/
+                color:blue;
+                width:40%;
+                min-width:200px;
+                height:100px;
+                /*block element*/
+                display:block;
+                        /*top right bottom left*/
+                margin:100px 40px 100px 40px;
+                        /*width style color*/
+                border:2px dashed blue;
+                        /*horizontal vertical*/
+                padding:10px 100px;
+                                /*padding+content*/
+                background-color:yellow;
+                /*rounds out the border*/
+                border-radius:8px;
+                overflow-y:auto;
+            }
+            span{
+                color:red;
+                /*inline element*/
+                display:inline-block;
+                background-color:pink;
+                /*can't change width and height for inline elements, unless it is an inline-block element*/
+                width:100px;
+                height:100px;
+            }
+        /*element classname*/
+            img.logo{
+                 /*responsive web design-do not set width and height but rather as percentages, also can set a min and max width and height
+                 also use img element over background color*/
+                height:50px;
+                width:auto;
+                float:left;
+                margin-right:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>This is a paragraph.</p>
+        <div><img class="logo" src="./tric.jpg">This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.This is a block element.</div>
+        <div>This is an <span>inline</span> element.</div>
+    </body>
+</html>
