@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+    <head>
+        <title>In-Class 7</title>
+        <style>
+            div{
+                /*font-family:Arial,Helvetica,sans-serif;
+                height:200px;
+                width:200px;
+                background-color:teal;
+                text-align:center;*/
+            }
+            .flexible-layout{
+                display:flex;
+                flex-direction:row;
+                background-color:lightblue;
+                justify-content:flex-start;
+            }
+            .flexible-layout>div{
+                background-color:white;
+                margin:10px;
+                padding:6px;
+                font-family:Arial,Helvetica,sans-serif;
+            }
+            .grid-layout{
+                display:grid;
+                grid-template-columns:auto auto auto;
+                background-color:dodgerblue;
+                gap:10px;
+            }
+            .grid-layout>div{
+                background-color:#f1f1f1;
+                border:1px solid black;
+                padding:10px;
+                font-size:30px;
+                text-align:center;
+            }
+            .grid-container{
+                display:grid;
+                grid-template-areas:
+                /*using single letters for areas makes it easier to visualize*/
+                /*12 columns are the standard*/
+                    'a a a a a a'
+                    'b b c c c c'
+                    'd d d d d d';
+            }
+            @media only screen and (max-width:500px){
+                .grid-container{
+                    display:grid;
+                    grid-template-areas:
+                    'a a'
+                    'b b'
+                    'c c'
+                    'd d'
+                }
+            }
+            @media print{
+                .footer{
+                    display:none !important;
+                }
+            }
+            .header{
+                grid-area:a;
+                background-color:red;
+            }
+            .menu{
+                grid-area:b;
+                background-color:green;
+            }
+            .body{
+                grid-area:c;
+                background-color:blue;
+            }
+            .footer{
+                grid-area:d;
+                background-color:yellow;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="flexible-layout">
+            <div>Magazines</div>
+            <div>Young Adult</div>
+            <div>Mystery</div>
+            <div>Fiction</div>
+            <div>Coffee Bar</div>
+        </div>
+        <div class="grid-layout">
+            <!--refers to the column lines starting at left to element 1 and ending at right of element 2-->
+            <div style="grid-column-start:1;grid-column-end:4;">Magazines</div>
+            <div>Young Adult</div>
+            <div>Mystery</div>
+            <div>Fiction</div>
+            <div>Coffee Bar</div>
+            <div>Technology</div>
+            <div>Business</div>
+            <div>Non-fiction</div>
+            <div>Anime</div>
+            <div>Gifts</div>
+        </div>
+        <div class="grid-container">
+            <div class="header">Header</div>
+            <div class="menu">Menu</div>
+            <div class="body">Body</div>
+            <div class="footer">Footer</div>
+        </div>
+    </body>
+</html>
